@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --dark-brown: #2B1B12;
+  --coffee: #5C4033;
+  --beige: #D8C3A5;
+  --cream: #F8F1E7;
+  --gold: #C89B3C;
+}
+
+/* Custom design classes matching Professional Polish */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(200, 155, 60, 0.2);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #2B1B12 0%, #5C4033 100%);
+}
+
+.gold-border {
+  border: 3px solid var(--gold);
+  box-shadow: 0 0 15px rgba(200, 155, 60, 0.3);
+}
+
+.pill {
+  background: rgba(200, 155, 60, 0.15);
+  border: 1px solid var(--gold);
+  color: var(--dark-brown);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom background animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(3deg); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-3deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 8s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 10s ease-in-out infinite;
+}
+
+/* Scrollbar styling matching the premium brown theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2B1B12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5C4033;
+  border-radius: 5px;
+  border: 2px solid #2B1B12;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C89B3C;
+}
+
