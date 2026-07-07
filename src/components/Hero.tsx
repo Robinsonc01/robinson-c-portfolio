@@ -142,10 +142,7 @@ export default function Hero() {
             <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-tr from-[#C89B3C] to-[#5C4033] rounded-full animate-float opacity-80 flex items-center justify-center shadow-lg border border-white/15">
               <span className="text-white text-xs font-bold font-mono">IT</span>
             </div>
-            <div className="absolute -bottom-4 -right-2 w-16 h-16 bg-[#2B1B12] border border-[#C89B3C]/50 rounded-2xl animate-float-reverse flex flex-col items-center justify-center p-2 shadow-xl z-20">
-              <span className="text-xs text-[#C89B3C] font-extrabold leading-none">WEB</span>
-              <span className="text-[9px] text-[#D8C3A5] font-medium leading-tight">Dev</span>
-            </div>
+            ``
 
             {/* Glowing Backdrop Circle */}
             <div className="absolute inset-0 bg-[#C89B3C]/20 rounded-full blur-xl scale-105"></div>
